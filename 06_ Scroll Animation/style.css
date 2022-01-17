@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 192, 203);
+    margin: 0;
+
+}
+
+p {
+    font-size: 40px;
+    font: bold;
+    color: rgb(102, 59, 89);
+    text-shadow: 4px 4px #e2d1e1;
+    
+    
+
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    border-radius: 7px;
+    border: solid 1px white;
+    margin: 8px;
+    transform: translateX(50%);
+    transition: transform 0.3s ease-in;
+    
+    
+}
+
+.section:nth-of-type(even) {
+    transform: translateX(-50%);
+}
+
+.section.show {
+    transform: translateX(0);
+}
+
+.section.cake{
+    background-image: url(https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: 400px 400px;
+}
+
+.section.candy{
+        background-image: url(https://media.istockphoto.com/photos/colorful-candies-jelly-and-marmalade-picture-id963150058?k=20&m=963150058&s=612x612&w=0&h=Mt4FUOHTXUdWzrL5yHA9h2kT9zHcj7KWIR4BVHkL8oc=);
+        background-size: 400px 300px;
+ }
+
+.section.chocolate{
+        background-image: url(https://media.istockphoto.com/photos/stack-of-milk-and-dark-chocolate-with-nuts-caramel-and-fruits-and-on-picture-id965487714?k=20&m=965487714&s=612x612&w=0&h=9Ihc745aAvFKdSXultBqUgMugMdEBYlQGN9RJStOXhc=);
+        background-size: 400px 300px;
+}
+
+.section.muffins{
+        background-image: url(https://media.istockphoto.com/photos/homemade-dark-chocolate-muffins-picture-id537698341?k=20&m=537698341&s=612x612&w=0&h=geZKIR7gTW_DzOAtLd8nCyKA5EGcecdw2gWy93a6AX8=);
+        background-size: 400px 300px;
+ }
+
+.section.pralines {
+        background-image: url(https://media.istockphoto.com/photos/assortment-of-fine-chocolate-candies-white-dark-and-milk-chocolate-picture-id1148258027?s=612x612);
+        background-size: 400px 300px;
+    }
+
+.section.birthday-cake{
+    background-image: url(https://media.istockphoto.com/photos/strawberry-and-cream-sponge-cake-on-white-wooden-table-picture-id1294578109?k=20&m=1294578109&s=612x612&w=0&h=BMrE2G1Z3PWqVEcS8QLZsxgkkGwtwoNuBsW_qHGtigE=);
+    background-size: 400px 300px;
+}
+.section.sweet-table{
+    
+        background-image: url(https://media.istockphoto.com/photos/dessert-table-for-any-holiday-at-wooden-background-picture-id962186740?k=20&m=962186740&s=612x612&w=0&h=9BZiUuMzGP_pwhX0bT2TAvsRZfJfAsXPX3BHhMqP4GY=);
+        background-size: 400px 300px;
+}
+.section.warm-ice{
+        background-image: url(https://media.istockphoto.com/photos/various-of-ice-cream-flavor-in-cones-blueberry-strawberry-pistachio-picture-id855447930?k=20&m=855447930&s=612x612&w=0&h=ne0AEmBclXD1kbzPF5yzVawWRa6wi6mm8dz1ugPMWug=);
+        background-size: 400px 300px;
+}
+.section.jelly{
+        background-image: url(https://media.istockphoto.com/photos/berry-fruit-jelly-with-fresh-berries-summer-dessert-picture-id483686806?k=20&m=483686806&s=612x612&w=0&h=oOXaI7rivB-4eHUjp-2VYtmWP8KVbJ68ISGyoLLdEtM=);
+        background-size: 400px 300px;
+}
+
+.section.chocolate-fountain{
+        background-image: url(https://media.istockphoto.com/photos/chocolate-fountain-with-strawberry-schokoladenbrunnen-picture-id531725255?k=20&m=531725255&s=612x612&w=0&h=bXdkh4dcgrvwZEAQaQi5YFjeCzhM4hFh6CG9cKAKmW0=);
+        background-size: 400px 300px;
+}
