@@ -6,6 +6,11 @@
     --left-btn-hover-color: rgba(38, 89, 112, 0.911);
     --right-btn-hover-color: rgba(165, 197, 212, 0.938);
 
+    --hover-width: 77%;
+    --other-width: 23%;
+    --speed: 1000ms;
+
+
 }
 
 * {
@@ -90,6 +95,7 @@ h1 {
     height: 100%;
     background: var(--left-bg-color);
 
+
 }
 
 .split.right {
@@ -99,6 +105,11 @@ h1 {
     background-size: 300px 300px;
     background-position-x: center;
     background-position-y: center;
+    
+}
+
+.split.right h1 {
+    color: rgb(12, 64, 143);
 }
 
 .split.right::before {
@@ -108,3 +119,48 @@ h1 {
     height: 100%;
     background: var(--right-bg-color);
 } 
+
+.split.right, .split.left, .split.right::before, .split.left::before {
+    transition: all var(--speed) ;
+}
+
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 2rem;
+        top: 37%;
+    }
+
+    .btn {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    @media(max-height:300px){
+        h1 {
+            font-size: 2rem;
+            top: 25%;
+        }
+    
+        .btn {
+            width: 8rem;
+            height: 1rem;
+            font-size: 1rem;
+        }
+    }
+}
